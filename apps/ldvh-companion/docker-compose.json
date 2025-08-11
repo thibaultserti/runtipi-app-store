@@ -1,17 +1,21 @@
+
 {
   "services": [
     {
       "name": "ldvh-companion",
+      "image": "ghcr.io/thibaultserti/ldvh-companion:main",
+      "isMain": true,
       "environment": {
         "DATABASE_URL": "sqlite:///data/ldvh_companion.db"
       },
-      "internalPort": "8080",
+      "internalPort": 8080,
       "volumes": [
         {
           "hostPath": "./data",
-          "containerPath": "/app/data"
+          "containerPath": "/app/data",
         }
       ]
+
     }
   ]
 }
