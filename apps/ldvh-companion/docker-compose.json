@@ -5,7 +5,7 @@
       "environment": {
         "DATABASE_URL": "sqlite:///data/ldvh_companion.db"
       },
-      "internalPort": 8080,
+      "internalPort": "8080",
       "volumes": [
         {
           "hostPath": "./data",
