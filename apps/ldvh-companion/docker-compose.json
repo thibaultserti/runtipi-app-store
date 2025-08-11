@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "ldvh-companion",
+      "image": "ghcr.io/thibaultserti/ldvh-companion:main",
+      "isMain": true,
+      "internalPort": "8080"
+    }
+  ]
+}
