@@ -1,14 +1,14 @@
 {
-  "name": "Livre dont vous êtes le héros companion app",
+  "name": "LDVH companion app",
   "id": "ldvh-companion",
   "available": true,
-  "short_desc": "Livre dont vous êtes le héros companion app.",
+  "short_desc": "LDVH companion app.",
   "author": "thibaulsert",
   "port": 8999,
   "categories": [
     "utilities"
   ],
-  "description": "Livre dont vous êtes le héros companion app.",
+  "description": "LDVH companion app.",
   "tipi_version": 2,
   "version": "v1.0.0",
   "source": "https://github.com/thibaulserti/ldvh-companion",
