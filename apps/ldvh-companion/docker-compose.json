@@ -12,7 +12,7 @@
       "volumes": [
         {
           "hostPath": "./data",
-          "containerPath": "/app/data",
+          "containerPath": "/app/data"
         }
       ]
 
