@@ -1,21 +1,24 @@
-
 {
+  "schemaVersion": 2,
   "services": [
     {
       "name": "ldvh-companion",
       "image": "ghcr.io/thibaultserti/ldvh-companion:main",
+      "internalPort": 8080,
       "isMain": true,
-
-      "internalPort": "8080",
       "volumes": [
         {
           "hostPath": "${APP_DATA_DIR}/data/ldvh-companion",
-          "containerPath": "/app/data"
+          "containerPath": "/app/data",
+          "readOnly": false
         }
       ],
-      "environment": {
-        "DATABASE_URL": "sqlite:///data/ldvh_companion.db"
-      }
+      "environment": [
+        {
+          "key": "DATABASE_URL",
+          "value": "sqlite:///data/ldvh_companion.db"
+        }
+      ]
     }
   ]
 }
